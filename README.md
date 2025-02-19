@@ -65,3 +65,16 @@ protoc-gen-go --version # protoc-gen-go v1.36.5
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 protoc-gen-go-grpc --version # protoc-gen-go-grpc 1.5.1
 ```
+
+# Layouts
+```
+|___protobuf
+    |___orders.proto
+        |___message Order
+        |___message GetOrdersRequest
+        |___message GetOrdersResponse
+        |___message CreateOrderRequest
+        |___message CreateOrderResponse
+        |___service OrderService
+            |___CreateOrder
+```
